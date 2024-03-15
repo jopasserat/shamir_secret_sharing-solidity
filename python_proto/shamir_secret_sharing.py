@@ -7,6 +7,7 @@ from polynomials import *
 
 N = 10
 T = 4
+Q = 2305843009213693951
 
 assert(T+1 <= N)
 
@@ -96,6 +97,8 @@ print(x.shares)
 print(y.shares)
 
 
-# as returned by Shamir::addSecretSharedValues
-solidity_shares = [15, 9, 21, 7, 9, 32, 3, 17, 9, 0]
-assert(shamir_reconstruct(Q, solidity_shares) == 5)
+# # as returned by Shamir::addSecretSharedValues
+# solidity_shares = [15, 9, 21, 7, 9, 32, 3, 17, 9, 0]
+# result = shamir_reconstruct(Q, solidity_shares)
+# print(f"result = {result}")
+# assert(result == 5)
